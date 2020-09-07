@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Star Wars</title>
+    <style>
+        /* table */
+
+        table,
+        th,
+        td {
+            border: 1px solid black;
+            border-collapse: collapse;
+            padding: 3px;
+
+            text-align: center;
+        }
+
+        caption {
+            border: 2px solid black;
+            background: greenyellow;
+        }
+
+        th {
+            padding: 5px;
+        }
+
+        .characters table tr:nth-child(even) {
+            background-color: rgb(144, 238, 144);
+        }
+
+        .characters table tr:nth-child(odd) {
+            background-color: rgba(144, 238, 144, 0.2);
+        }
+
+        .characters table th {
+            color: white;
+            background-color: #999;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="characters">
+        <table style="width:100%">
+            <caption>Star Wars</caption>
+            <tr>
+                <th>Name</th>
+                <th>Hair</th>
+                <th>Height</th>
+                <th>Planet Name</th>
+                <th>Planet Population</th>
+
+
+            </tr>
+        </table>
+        <div class="loading">
+            Loading...
+        </div>
+    </div>
+    <script src="./script.js"></script>
+</body>
+
+</html>
